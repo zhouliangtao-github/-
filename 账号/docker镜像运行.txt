@@ -1,0 +1,40 @@
+启动docker
+systemctl enable docker
+关闭
+sudo systemctl disable docker
+镜像
+docker images
+
+查看运行中的容器：
+docker ps [-a]
+
+停止镜像：
+docker stop [name]或ID
+
+删除容器
+docker rm [id]
+
+docker运行一些镜像
+1.可以使用以下命令来运行 mysql 容器：
+docker run --name mysql-01 -e MYSQL_ROOT_PASSWORD=123456 -d mysql --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+
+$ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+启动并暴露容器MySQL的端口:
+先
+sudo service mysql stop  
+
+docker run --name mysql-01 -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+
+之后就只需：
+docker start mysql-01
+docker start mysql-02             3307端口
+7.连接Mysql数据库
+
+(1).docker下命令行连接
+
+1).首先，进入CMD执行下列命令
+
+docker exec -it  a80c722bbdbc bash  
+2).然后，输入下面命令，并输入密码password
+
+mysql -uroot -p -h localhost

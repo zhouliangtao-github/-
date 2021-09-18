@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      #uri: mongodb://bidradartest:BidRadarTestSecscisDatawds2016.@node4-gxscalcsvr.realsvr.cs-xc-idc2-area1.singhand.com:50200/bidradartest
+        #正式 爬虫
+      crawler:
+        uri: mongodb://bidradar_usr:SinghandBidRaddarDOCS2016.@node14-gxstoresvr.realsvr.cs-xc-idc2-area1.singhand.com:50200/bidRadar
+      test:
+        uri: mongodb://bidradartest:BidRadarTestSecscisDatawds2016.@node4-gxscalcsvr.realsvr.cs-xc-idc2-area1.singhand.com:50200/bidradartest
+        #工商
+        #commercial:
+        # uri: mongodb://Business:Business2020.@172.17.104.103:27017/BusinessData
+#  application:
+#    name: person_equals_army_mongoweb
+server:
+  port: 8081

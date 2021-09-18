@@ -1,0 +1,17 @@
+账号：
+    云桌面：
+	端口：31028
+	IP：10.1.130.3
+	密码：名字拼音+端口
+Confluence, Git, Jira
+	username:bi_zhouliangtao 
+	password:Aa123456789.
+
+
+cd ~/Downloads
+
+./SINGHAND_VDI_REMOTE_CONNECT  -h 10.1.130.3 -p 31028 -w zhouliangtao31028
+
+
+
+

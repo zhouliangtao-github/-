@@ -1,0 +1,10 @@
+consul官网文档：
+https://learn.hashicorp.com/tutorials/consul/get-started-agent
+consul --version
+Start the Consul agent in development mode.***:
+consul agent -dev
+查看consul注册中心界面：
+http://localhost:8500/
+停止代理
+使用consul leave命令停止 Consul 代理。这将优雅地停止代理，使其离开 Consul 数据中心并关闭。***：
+consul leave
